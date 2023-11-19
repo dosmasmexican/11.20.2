@@ -12,6 +12,7 @@ function draw() {
     let gravity = createVector(0, 0.1);
     emitter.applyForce(gravity);
     emitter.addParticle();
+  }
     for (let repeller of repellers) {
       repeller.show();
     }
@@ -24,4 +25,3 @@ function draw() {
       repellers.push(new Repeller(mouseX, mouseY));
     }
   }
-}
